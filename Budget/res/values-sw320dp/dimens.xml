@@ -14,7 +14,12 @@
      <dimen name="padding">10dp</dimen>
     
     
-    <!-- Fragment New Patient -->
+     <dimen name="margin_top">16dp</dimen>
+    <dimen name="margin_left">16dp</dimen>
+    <dimen name="margin_right">16dp</dimen>
+     <dimen name="margin_left_button">140dp</dimen>
+     
+     
     
     <dimen name="new_patient_margin_top">16dp</dimen>
     <dimen name="new_patient_margin_left">16dp</dimen>
