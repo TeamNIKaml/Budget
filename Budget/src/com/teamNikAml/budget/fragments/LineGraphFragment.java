@@ -2,6 +2,14 @@ package com.teamNikAml.budget.fragments;
 
 
 
+
+
+import com.teamNikAml.budget.activity.R;
+import com.teamNikAml.budget.graph.Line;
+import com.teamNikAml.budget.graph.LineGraph;
+import com.teamNikAml.budget.graph.LineGraph.OnPointClickedListener;
+import com.teamNikAml.budget.graph.LinePoint;
+
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -10,11 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.teamNikAml.budget.activity.R;
-import com.teamNikAml.budget.graph.Line;
-import com.teamNikAml.budget.graph.LineGraph;
-import com.teamNikAml.budget.graph.LineGraph.OnPointClickedListener;
-import com.teamNikAml.budget.graph.LinePoint;
+
 
 public class LineGraphFragment extends Fragment {
     
@@ -34,47 +38,62 @@ public class LineGraphFragment extends Fragment {
     private void init(View v)
     {
 	 final Resources resources = getResources();
+	 
+	final  String[] month,value;
+		
+	//	SalesDataSource salesDataSource = SalesDataSource.getSalesDataSource();
+		//month = salesDataSource.getMonth();
+	//	value = salesDataSource.getValues();
+	 
+	 
 	        Line l = new Line();
-	        l.setUsingDips(true);
-	        LinePoint p = new LinePoint();
-	        p.setX(0);
-	        p.setY(5);
-	        p.setColor(resources.getColor(R.color.red));
-	        p.setSelectedColor(resources.getColor(R.color.transparent_blue));
-	        l.addPoint(p);
-	        p = new LinePoint();
-	        p.setX(8);
-	        p.setY(8);
-	        p.setColor(resources.getColor(R.color.blue));
-	        l.addPoint(p);
-	        p = new LinePoint();
-	        p.setX(10);
-	        p.setY(4);
-	        l.addPoint(p);
-	        p.setColor(resources.getColor(R.color.green));
-	        l.setColor(resources.getColor(R.color.orange));
+	        
+	        LinePoint p ;
+	        
+	        int[] color ={R.color.green_light,
+					R.color.orange,
+					R.color.green,
+					R.color.blue,
+					R.color.transparent_blue,
+					R.color.purple} ;
+	        int min,max;
+	        
+	    //    min = max = Integer.parseInt(value[0]);
+	        
+	        for(int i=0;i<6;i++)
+	        {
+	        	 p = new LinePoint();
+	 	        p.setX(i*2);
+	 	     //   p.setY((Float.parseFloat(value[i])));
+	 	        p.setColor(resources.getColor(color[i]));
+	 	        l.addPoint(p);
+	 	        
+	 	      /*  if(min > Integer.parseInt(value[i] ))
+	 	        		min = Integer.parseInt(value[i]);
+	 	        
+	 	       if(max < Integer.parseInt(value[i] ))
+	        		max = Integer.parseInt(value[i]);*/
+	 	        
+	 	        
+	        }
+	        
+	        l.setColor(resources.getColor(color[3]));
+	        
+	        
+	        
+	      
 
-	        LineGraph li = (LineGraph) v.findViewById(R.id.linegraph);
-	        li.setUsingDips(true);
+		LineGraph li = (LineGraph) v.findViewById(R.id.linegraph);
+	        li.setUsingDips(false);
 	        li.addLine(l);
-	        li.setRangeY(0, 10);
+	   //     li.setRangeY(min,max);
 	        li.setLineToFill(0);
-	        
-	        
-	        
-	     
-	        
-	        
-	        
 
-		li.setOnPointClickedListener(new OnPointClickedListener() {
+	        li.setOnPointClickedListener(new OnPointClickedListener() {
 
 	            @Override
 	            public void onClick(int lineIndex, int pointIndex) {
-	                Toast.makeText(getActivity(),
-	                        "Line " + lineIndex + " / Point " + pointIndex + " clicked",
-	                        Toast.LENGTH_SHORT)
-	                        .show();
+	             
 	            }
 	        });
     }
