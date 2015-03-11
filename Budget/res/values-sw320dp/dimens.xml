@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- Text size and padding -->
+    
+    <dimen name="textSize_edit_text">18sp</dimen>
+    <dimen name="textSize_button">22sp</dimen>
+    <dimen name="textSize_heading">26sp</dimen>
+    
+    
+     <dimen name="padding">10dp</dimen>
+    
+    
+    <!-- Fragment New Patient -->
+    
+    <dimen name="new_patient_margin_top">16dp</dimen>
+    <dimen name="new_patient_margin_left">16dp</dimen>
+    <dimen name="new_patient_margin_right">16dp</dimen>
+     <dimen name="new_patient_margin_left_button">140dp</dimen>
+  
+  
+
+</resources>

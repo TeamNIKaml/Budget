@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Budget</string>
+    <string name="action_settings">Settings</string>
+   <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Add User</item>
+        <item >Add Catagory</item>
+        <item >Income</item>
+        <item >Expense</item>
+         <item >Balance Sheet</item>
+          <item >Graph</item>
+     </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_add_user</item>
+        <item>@drawable/ic_add_user</item>
+        <item>@drawable/ic_income</item>
+        <item>@drawable/ic_expense</item>
+          <item>@drawable/ic_balance_sheet</item>
+            <item>@drawable/ic_graph</item>
+       
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="animate">Animate</string>
+    <string name="insert">Insert</string>
+    <string name="delete">Delete</string>
+    
+    
+  
+
+</resources>
