@@ -18,13 +18,12 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.teamNikAml.budget.adaptor.NavDrawerListAdapter;
-import com.teamNikAml.budget.fragments.AddCatagoryFragment;
-import com.teamNikAml.budget.fragments.AddUserFragment;
-import com.teamNikAml.budget.fragments.BalanceSheetFragment;
-import com.teamNikAml.budget.fragments.BarGraphFragment;
-import com.teamNikAml.budget.fragments.ExpenseFragment;
-import com.teamNikAml.budget.fragments.GraphFragment;
-import com.teamNikAml.budget.fragments.IncomeFragment;
+import com.teamNikAml.budget.addCategory.fragment.AddCatagoryFragment;
+import com.teamNikAml.budget.addUser.fragment.AddUserFragment;
+import com.teamNikAml.budget.balanaceSheet.fragment.BalanceSheetFragment;
+import com.teamNikAml.budget.expense.fragment.ExpenseFragment;
+import com.teamNikAml.budget.graph.fragment.GraphFragment;
+import com.teamNikAml.budget.income.fragment.IncomeFragment;
 import com.teamNikAml.budget.model.NavDrawerItem;
 
 
@@ -198,7 +197,7 @@ public class MainActivity extends Activity {
 			fragment = new BalanceSheetFragment();
 			break;
 		case 5:
-			fragment = new BarGraphFragment();
+			fragment = new GraphFragment();
 			break;
 	
 

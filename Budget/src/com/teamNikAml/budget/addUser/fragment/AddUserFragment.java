@@ -1,4 +1,4 @@
-package com.teamNikAml.budget.fragments;
+package com.teamNikAml.budget.addUser.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import com.teamNikAml.budget.activity.R;
 
-public class BalanceSheetFragment extends Fragment {
+public class AddUserFragment extends Fragment {
 
 	
 
@@ -16,7 +16,7 @@ public class BalanceSheetFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		View rootView = inflater.inflate(R.layout.fragment_balance_sheet, container,
+		View rootView = inflater.inflate(R.layout.fragment_add_user, container,
 				false);
 
 		return rootView;
