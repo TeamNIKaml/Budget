@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >
+
+    <!-- Email id -->
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="left" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <Spinner
+                android:id="@+id/graphSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+            <Spinner
+                android:id="@+id/valueSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+        </LinearLayout>
+    </TableRow>
+
+    <!-- Email id -->
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="left" >
+
+        <FrameLayout
+            android:id="@+id/graph_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+    </TableRow>
+
+</TableLayout>
